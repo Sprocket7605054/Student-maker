@@ -1,0 +1,135 @@
+import random
+
+rooster = [ 'Alex', 'bobby', 'Bob', 'Billy','James', 'Robert', 'John', 'Michael', 'David','William','Mary', 'Patricia','Jennifer','Linda', 'Elizabeth',' Barbara', 'Susan',' Jessica', ' Sarah', 'Karen' ]
+def pairs():
+    group_1 = []
+    group_2 = []
+    group_3 = []
+    group_4 = []
+    group_5 = []
+    group_6 = []
+    group_7 = []
+    group_8 = []
+    group_9 = []
+    group_10 = []
+    random.shuffle(rooster)
+   
+    for x in range(len(rooster)):
+        if (x < 2):
+            students = rooster.pop(0)
+            group_1.insert(0, students)
+            
+        elif(x >= 2) and (x < 4):
+            students = rooster.pop(0)
+            group_2.insert(0, students)
+            
+        elif(x >= 4) and (x < 6):
+            students = rooster.pop(0)
+            group_3.insert(0, students)
+            
+        elif(x >= 6) and (x < 8):
+            students = rooster.pop(0)
+            group_4.insert(0, students)
+            
+        elif(x >= 8) and (x < 10):
+            students = rooster.pop(0)
+            group_5.insert(0, students)
+            
+        elif(x >= 10) and (x < 12):
+            students = rooster.pop(0)
+            group_6.insert(0, students)
+            
+        elif(x >= 12) and (x < 14):
+            students = rooster.pop(0)
+            group_7.insert(0, students)
+            
+        elif(x >= 14) and (x < 16):
+            students = rooster.pop(0)
+            group_8.insert(0, students)
+            
+        elif(x >= 16) and (x < 18):
+            students = rooster.pop(0)
+            group_9.insert(0, students)
+            
+        elif(x >= 18) and (x < 20):
+            students = rooster.pop(0)
+            group_10.insert(0, students)
+    print(group_1, group_10)
+    
+            
+        
+
+def trios():
+    group_1 = []
+    group_2 = []
+    group_3 = []
+    group_4 = []
+    group_5 = []
+    group_6 = []
+    random.shuffle(rooster)
+    for x in range(len(rooster)):
+        if (x < 4):
+            students = rooster.pop(0)
+            group_1.insert(0, students)
+            
+        elif(x >= 4) and (x < 8):
+            students = rooster.pop(0)
+            group_2.insert(0, students)
+            
+        elif(x >= 8) and (x <11):
+            students = rooster.pop(0)
+            group_3.insert(0, students)
+            
+        elif(x >= 11) and (x < 14):
+            students = rooster.pop(0)
+            group_4.insert(0, students)
+            
+        elif(x >= 14) and (x < 17):
+            students = rooster.pop(0)
+            group_5.insert(0, students)
+            
+        elif(x >= 17) and (x < 20):
+            students = rooster.pop(0)
+            group_6.insert(0, students)
+    print(group_1, group_6)
+            
+    
+
+def quads():
+    group_1 = []
+    group_2 = []
+    group_3 = []
+    group_4 = []
+    group_5 = []
+    random.shuffle(rooster)
+    for x in range(len(rooster)):
+        if (x < 4):
+            students = rooster.pop(0)
+            group_1.insert(0, students)
+            
+        elif(x >= 4) and (x < 8):
+            students = rooster.pop(0)
+            group_2.insert(0, students)
+            
+        elif(x >= 8) and (x < 12):
+            students = rooster.pop(0)
+            group_3.insert(0, students)
+            
+        elif(x >= 12) and (x < 16):
+            students = rooster.pop(0)
+            group_4.insert(0, students)
+            
+        elif(x >= 16) and (x < 20):
+            students = rooster.pop(0)
+            group_5.insert(0, students)
+    print(group_1, group_5)
+    
+    
+
+def main():
+    #pairs()
+    trios()
+    #quads()
+
+
+main()
