@@ -54,7 +54,7 @@ def pairs():
         elif(x >= 18) and (x < 20):
             students = rooster.pop(0)
             group_10.insert(0, students)
-    print(group_1, group_10)
+    print("",group_1,'\n',group_2,'\n',group_3,'\n',group_4,'\n',group_5,"\n", group_6,'\n',group_7,'\n',group_8,'\n',group_9,'\n',group_10)
     
             
         
@@ -91,7 +91,7 @@ def trios():
         elif(x >= 17) and (x < 20):
             students = rooster.pop(0)
             group_6.insert(0, students)
-    print(group_1, group_6)
+    print("",group_1,'\n',group_2,'\n',group_3,'\n',group_4,'\n',group_5,"\n",group_6)
             
     
 
@@ -122,14 +122,31 @@ def quads():
         elif(x >= 16) and (x < 20):
             students = rooster.pop(0)
             group_5.insert(0, students)
-    print(group_1, group_5)
+    print("",group_1,'\n',group_2,'\n',group_3,'\n',group_4,'\n',group_5)
     
     
 
 def main():
-    #pairs()
-    trios()
-    #quads()
+    print('Welcome to the student grouper machine')
+    print('You can pick groups of 2,3,4')
+    print('So decide the number of people in a group')
+    print('How many people should be in a group?')
+    Answer = int(input())
+    Grouping = False
+    while Grouping == False:
+        if ( Answer == 2):
+            pairs()
+            Grouping = True
+        elif (Answer == 3):
+            trios()
+            Grouping = True
+        elif(Answer == 4):
+            quads()
+            Grouping = True
+        else: 
+            print('You have put an ivalid option')
+            print('Provide a correct amount of groups')
+            Answer = int(input())
 
 
 main()
