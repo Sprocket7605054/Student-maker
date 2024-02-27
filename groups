@@ -1,4 +1,5 @@
 import random
+import time
 
 rooster = [ 'Alex', 'bobby', 'Bob', 'Billy','James', 'Robert', 'John', 'Michael', 'David','William','Mary', 'Patricia','Jennifer','Linda', 'Elizabeth',' Barbara', 'Susan',' Jessica', ' Sarah', 'Karen' ]
 def pairs():
@@ -135,14 +136,23 @@ def main():
     Grouping = False
     while Grouping == False:
         if ( Answer == 2):
+            tic = time.perf_counter()
             pairs()
             Grouping = True
+            toc = time.perf_counter()
+            print("Code took", toc - tic,"seconds")
         elif (Answer == 3):
+            tic = time.perf_counter()
             trios()
             Grouping = True
+            toc = time.perf_counter()
+            print("Code took", toc - tic,"seconds")
         elif(Answer == 4):
+            tic = time.perf_counter()
             quads()
             Grouping = True
+            toc = time.perf_counter()
+            print("Code took", toc - tic,"seconds")
         else: 
             print('You have put an ivalid option')
             print('Provide a correct amount of groups')
